@@ -22,7 +22,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Anjana -->
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
@@ -34,28 +33,30 @@
     <div class="home-wrapper">
         <div class="home-bg relative">
             <nav class="navbar-pc">
-                <div class="row">
+                <div class="row justify-space-between">
                     <div class="home-logo">
                         <img class="img-fluid" src="img/logo.png" alt="">
                     </div>
-                    <div class="nav-links">
-                        <a href="index.html" class="active-class">HOME</a>
-                        <a href="about.html">ABOUT US</a>
-                        <a href="journey.html">JOURNEY TO MRITZ</a>
-                        <a href="">PROJECTS</a>
-                        <a href="">PARTNERS</a>
-                        <a href="be-part-of.html">BE PART OF</a>
-                        <a href="news.html">NEWS</a>
+                    <div class="row w-80">
+                        <div class="nav-links">
+                            <a href="index.html" class="active-class">HOME</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="journey.html">JOURNEY TO MRITZ</a>
+                            <a href="">PROJECTS</a>
+                            <a href="">PARTNERS</a>
+                            <a href="be-part-of.html">BE PART OF</a>
+                            <a href="news.html">NEWS</a>
+                        </div>
+                        <div style="width: auto; margin: auto;">
+                            <a class="btn" href="">Access &nbsp;<strong>MRITZ</strong></a>
+                        </div>
                     </div>
-                    <div style="width: auto; margin: auto;">
-                        <a class="btn" href="">Access &nbsp;<strong>MRITZ</strong></a>
-                    </div>
-                    <!-- <button id="open-nav" class="row text-center">
+                    <button id="open-nav" class="row text-center">
                         <img id="toggle-plus" src="img/toggle-plus.png" alt="">
                     </button>
-                    <button id="close-nav" class="display-off">
+                    <button id="close-nav" class="row display-off">
                         <img id="toggle-minus" src="img/toggle-minus.png" alt="">
-                    </button> -->
+                    </button>
                 </div>
                 <div class="no-dis" id="navbar-opened">
                     <a href="index.html" class="active-class">HOME</a>
@@ -70,39 +71,14 @@
                         <img style="width: 30%;" class="img-fluid" src="img/logo.png" alt="">
                     </div>
                 </div>
-                <!-- <div class="bottom-logo">
-                    <hr>
-                    <img class="img-fluid" src="img/logo.png" alt="">
-                </div> -->
             </nav>
 
-            <!-- <nav class="navbar-mob">
-                <div class="row">
-                    <div class="home-logo">
-                        <img class="img-fluid" src="img/logo.png" alt="">
-                    </div>
-                    <div class="nav-links">
-                        <a href="index.html" class="active-class">HOME</a>
-                        <a href="about.html">ABOUT US</a>
-                        <a href="journey.html">JOURNEY TO MRITZ</a>
-                        <a href="">PROJECTS</a>
-                        <a href="">PARTNERS</a>
-                        <a href="be-part-of.html">BE PART OF</a>
-                        <a href="news.html">NEWS</a>
-                    </div>
-                    <div style="width: auto; margin: auto;">
-                        <a class="btn" href="">Access &nbsp;<strong>MRITZ</strong></a>
-                    </div>
-                </div>
-            </nav> -->
-
-            <div class="container">
+            <div class="container home-container">
                 <div class="content">
                     <div class="home-content">
                         <h1>Inspiring <br> Powerful Minds, <br> <span>Creating Bold <br> Solutions.</span></h1>
                         <p>Join our early access list now and you’ll find out first when open up our first places inside
-                            the
-                            platform. Estimated early date january 2021</p>
+                            the platform. Estimated early date january 2021</p>
                         <div class="btn">
                             <a href="">Join <strong>MRITZ</strong></a>
                         </div>
@@ -118,7 +94,7 @@
 
     <!-- explore mritz -->
     <div class="explore">
-        <div class="container relative">
+        <div class="container">
             <div class="content floatClass">
                 <h2>Explore the advanced world of <span>MRITZ</span></h2>
                 <h5>Experience vast array of innovative solutions to successfully shape culture, drive
@@ -283,9 +259,15 @@
                 <h4>Together we go beyond <span>'Unlimited Opportunities'</span></h4>
                 <p>Every organization and professional is confronted with the challenge of rapid change.
                     We turn adversity into opportunity.</p>
-                <div class="arrows" style="float: right;">
-                    <img class="mx-1" src="img/arrow-left.png" alt="">
-                    <img src="img/arrow-right.png" alt="">
+                <div class="arrows">
+                    <!-- <img class="mx-1" src="img/arrow-left.png" alt="">
+                    <img src="img/arrow-right.png" alt=""> -->
+                    <div class="arrow-single">
+                        <i style="position: absolute;" class="fa fa-regular fa-arrow-left"></i>
+                    </div>
+                    <div class="arrow-single">
+                        <i style="position: absolute;" class="fa fa-regular fa-arrow-right"></i>
+                    </div>
                 </div>
                 <div class="opportunities-box-wrapper">
                     <div class="opportunities-box">
@@ -424,7 +406,7 @@
 
     <!-- projects-details -->
     <div class="projects-details-large">
-        <div class="container">
+        <div class="container px-0">
             <div class="row">
                 <div class="content m-auto">
                     <img class="img-fluid" src="img/coe.png" alt="">
@@ -438,7 +420,7 @@
                         increased business success</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row relative">
                 <div class="content m-auto">
                     <h2><span>MI</span> Devices</h2>
                     <p>Miqanda users have fully dedicated smart devices loaded with cutting-edge and creative
@@ -451,8 +433,10 @@
                 <div class="content m-auto">
                     <img class="img-fluid" src="img/devices 1.png" alt="">
                 </div>
+                <img class="dot-left-home-project img-fluid" src="img/dot-work-fat.png" alt="">
             </div>
-            <div class="row">
+            <div class="row relative">
+                <img class="dot-right-home-project img-fluid" src="img/dot-work.png" alt="">
                 <div class="content m-auto">
                     <img class="img-fluid" src="img/mi store(1) 1.png" alt="">
                 </div>
@@ -482,7 +466,8 @@
                     <img class="img-fluid" src="img/mi studio 1.png" alt="">
                 </div>
             </div>
-            <div class="row">
+            <div class="row relative">
+                <img src="img/dot-work-fat.png" alt="" class="img-fluid dot-left-home-project">
                 <div class="content m-auto">
                     <img class="img-fluid" src="img/mi media(1) 1.png" alt="">
                 </div>
@@ -495,7 +480,7 @@
                         acquisition, user engagement, and loyalty to performance.</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row relative">
                 <div class="content m-auto">
                     <h2><span>MI</span> Coin</h2>
                     <p>The widespread legal acceptance of cryptocurrencies around the world has maintained the public's
@@ -509,6 +494,7 @@
                 <div class="content m-auto">
                     <img class="img-fluid" src="img/MI Qoin [737x552] 1.png" alt="">
                 </div>
+                <img src="img/dot-work.png" alt="" class="img-fluid dot-right-home-project">
             </div>
         </div>
     </div>
@@ -690,10 +676,10 @@
                         <div>
                             <p>Subscribe our Newsletter</p>
                         </div>
-                        <div>
+                        <div class="w-40">
                             <form>
                                 <div class="email-typer">
-                                    <input class="email-type" type="text" placeholder="Email Address" />
+                                    <input class="email-type relative" type="text" placeholder="Email Address" />
                                     <a class="email-signup" href="">Signup</a>
                                 </div>
                             </form>

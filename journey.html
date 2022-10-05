@@ -33,26 +33,48 @@
 <body>
     <div class="home-wrapper">
         <div class="home-bg relative">
-            <nav>
-                <div class="row">
+            <nav class="navbar-pc">
+                <div class="row justify-space-between">
                     <div class="home-logo">
                         <img class="img-fluid" src="img/logo.png" alt="">
                     </div>
-                    <div class="nav-links">
-                        <a href="index.html">HOME</a>
-                        <a href="about.html">ABOUT US</a>
-                        <a href="journey.html" class="active-class">JOURNEY TO MRITZ</a>
-                        <a href="">PROJECTS</a>
-                        <a href="">PARTNERS</a>
-                        <a href="be-part-of.html">BE PART OF</a>
-                        <a href="news.html">NEWS</a>
+                    <div class="row w-80">
+                        <div class="nav-links">
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT US</a>
+                            <a href="journey.html" class="active-class">JOURNEY TO MRITZ</a>
+                            <a href="">PROJECTS</a>
+                            <a href="">PARTNERS</a>
+                            <a href="be-part-of.html">BE PART OF</a>
+                            <a href="news.html">NEWS</a>
+                        </div>
+                        <div style="width: auto; margin: auto;">
+                            <a class="btn" href="">Access &nbsp;<strong>MRITZ</strong></a>
+                        </div>
                     </div>
-                    <div style="width: auto; margin: auto;">
-                        <a class="btn" href="">Access &nbsp;<strong>MRITZ</strong></a>
+                    <button id="open-nav" class="row text-center">
+                        <img id="toggle-plus" src="img/toggle-plus.png" alt="">
+                    </button>
+                    <button id="close-nav" class="row display-off">
+                        <img id="toggle-minus" src="img/toggle-minus.png" alt="">
+                    </button>
+                </div>
+                <div class="no-dis" id="navbar-opened">
+                    <a href="index.html" class="active-class">HOME</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="journey.html">JOURNEY TO MRITZ</a>
+                    <a href="">PROJECTS</a>
+                    <a href="">PARTNERS</a>
+                    <a href="be-part-of.html">BE PART OF</a>
+                    <a href="news.html">NEWS</a>
+                    <div class="bottom-logo">
+                        <hr>
+                        <img style="width: 30%;" class="img-fluid" src="img/logo.png" alt="">
                     </div>
                 </div>
             </nav>
-            <div class="container">
+
+            <div class="container home-container">
                 <div class="content">
                     <div class="home-content">
                         <h1>Journey to <span>MRITZ</span></h1>
@@ -115,10 +137,10 @@
                         <div>
                             <p>Subscribe our Newsletter</p>
                         </div>
-                        <div>
+                        <div class="w-40">
                             <form>
                                 <div class="email-typer">
-                                    <input class="email-type" type="text" placeholder="Email Address" />
+                                    <input class="email-type relative" type="text" placeholder="Email Address" />
                                     <a class="email-signup" href="">Signup</a>
                                 </div>
                             </form>
@@ -171,8 +193,5 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="js/index.js"></script>
-
-</html>
-</body>
 
 </html>

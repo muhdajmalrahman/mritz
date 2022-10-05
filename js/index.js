@@ -50,27 +50,21 @@ const fullScreen = (e) => {
 const navLinks = document.getElementById("navbar-opened")
 const openNav = document.getElementById("open-nav")
 const closeNav = document.getElementById("close-nav")
-const togglePlus = document.getElementById("toggle-plus")
-const toggleMinus = document.getElementById("toggle-minus")
+// const togglePlus = document.getElementById("toggle-plus")
+// const toggleMinus = document.getElementById("toggle-minus")
 
 openNav.addEventListener('click', () => {
     navLinks.classList.add('navbar-toggler-opened');
-    togglePlus.classList.add('display-off');
-    toggleMinus.classList.remove('display-off')
-    toggleMinus.classList.add('display-on');
-    // togglePlus.style.display = 'none'
-    // toggleMinus.style.display = 'block'
+    openNav.classList.add('display-off');
+    closeNav.classList.remove('display-off')
+    // closeNav.classList.add('display-on');
+    // openNav.classList.remove('display-on')
 })
 
 closeNav.addEventListener('click', () => {
     navLinks.classList.remove('navbar-toggler-opened');
-    togglePlus.classList.add('display-on');
-    toggleMinus.classList.add('display-off');
+    openNav.classList.remove('display-off');
+    closeNav.classList.add('display-off');
+    // closeNav.classList.add('display-off')
 })
-
-// const navLinks = document.querySelectorAll(".navbar-opened");
-
-// document.addEventListener('click', function handleClick(event) {
-//     event.target.classList.add('navbar-toggler-opened');
-// });
 
