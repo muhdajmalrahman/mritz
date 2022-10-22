@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="home-wrapper">
+    <div class="home-wrapper home-bg-main">
         <div class="home-bg relative">
             <nav class="navbar-pc">
                 <div class="row justify-space-between">
@@ -40,8 +40,8 @@
                     </div>
                     <div class="row w-80">
                         <div class="nav-links">
-                            <a href="index.html" class="active-class">HOME</a>
-                            <a href="about.html">ABOUT US</a>
+                            <a href="index.html">HOME</a>
+                            <a href="about.html" class="active-class">ABOUT US</a>
                             <a href="journey.html">JOURNEY TO MRITZ</a>
                             <a href="">PROJECTS</a>
                             <a href="">PARTNERS</a>
@@ -74,7 +74,7 @@
                 </div>
             </nav>
 
-            <div class="container home-container">
+            <!-- <div class="container home-container">
                 <div class="content">
                     <div class="home-content">
                         <h1>Inspiring <br> Powerful Minds, <br> <span>Creating Bold <br> Solutions.</span></h1>
@@ -86,6 +86,20 @@
                     </div>
                     <img src="img/Vector (1).png" alt="" class="scroll-more-arrow">
                 </div>
+            </div> -->
+            <div class="container home-container">
+                <div class="content about-content">
+                    <div class="home-content">
+                        <h1>About <span>MRITZ</span></h1>
+                        <p>We at MRITZ believe that “Simplicity is the ultimate sophistication”</br> and always strive to
+                            build scalable technology solutions which fulfill </br>the requirements in the agilest and
+                            simplest of ways.</p>
+                        <div class="btn join-main-btn">
+                            <a href="">Join <strong>MRITZ</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/Vector (1).png" alt="" class="scroll-more-arrow">
             </div>
             <div>
                 <img class="img-fluid dot-work-right" src="img/dot-work-fat.png" alt="">
@@ -113,13 +127,21 @@
         </div>
     </div> -->
 
+            <!-- Be part of fixed button -->
+    <div class="fixedButton">
+        <a href="be-part-of.html"><button class="fButton">
+                <div class="be-partof">Be<span style="margin-left:5px;" class="font-aqua">PARTOF</span>
+                </div>
+            </button></a>
+    </div>
+
     <!-- the visionary -->
     <div class="container" id="visionary-dots">
         <div class="row align-center">
             <div class="content img-container-wrapper" id="img-wrap-side">
                 <img class="img-fluid visionary-side" src="img/Rectangle 384.png" alt="">
-                <div class="img-container">
-                    <img class="img-fluid" src="img/mashood.png" alt="">
+                <div class="img-container" id="chairman-container">
+                    <img class="img-fluid" id="chairman-img" src="img/mashood.png" alt="">
                 </div>
                 <div class="chairman-text">
                     <h4>MK Mashood</h4>
@@ -144,66 +166,65 @@
     </div>
 
     <!-- founding team -->
-    <div>
-        <div class="container">
-            <div class="content-full">
-                <h2>Founding <span>Team</span></h2>
-                <p>We believe tech innovation is a team sport. That’s why our team is buzzing with brilliant minds whose
-                    expertise is in creating unique systems, processes and solutions, all led by technology.</p>
-            </div>
-            <div class="content-full employee-hide">
-                <div class="row justify-space-between">
-                    <div class="team-container-small">
-                        <h6>Lubina Azeem</h6>
-                        <p>Head of Administration</p>
-                        <div>
-                            <img class="img-fluid" src="img/lubina.png" alt="">
-                        </div>
-                        <img class="mt-1" src="img/left-arrow-team.svg" alt="">
+
+    <div class="container" id="founding-team">
+        <div class="content-full">
+            <h2>Founding <span>Team</span></h2>
+            <p>We believe tech innovation is a team sport. That’s why our team is buzzing with brilliant minds whose
+                expertise is in creating unique systems, processes and solutions, all led by technology.</p>
+        </div>
+        <div class="content-full employee-hide">
+            <div class="row justify-space-between">
+                <div class="team-container-small">
+                    <h6>Lubina Azeem</h6>
+                    <p>Head of Administration</p>
+                    <div>
+                        <img class="img-fluid" src="img/lubina.png" alt="">
                     </div>
-                    <div class="team-container-big justify-space-between row">
-                        <div class="w-50">
-                            <img class="img-fluid" src="img/babida.png" alt="">
-                        </div>
-                        <div class="text-team-big">
-                            <img class="img-twenty" src="img/double-com.svg" alt="">
-                            <h5>I was amazed by the vision of MRITZ and their stragety on Implementing innovations in
-                                technology. This strived me to be a part of MRITZ</h5>
-                            <h6 style="text-transform: uppercase;">Lubina Azeem</h6>
+                    <img class="mt-1" src="img/left-arrow-team.svg" alt="">
+                </div>
+                <div class="team-container-big justify-space-between row">
+                    <div class="w-50">
+                        <img class="img-fluid" src="img/babida.png" alt="">
+                    </div>
+                    <div class="text-team-big">
+                        <img class="img-twenty" src="img/double-com.svg" alt="">
+                        <h5>I was amazed by the vision of MRITZ and their stragety on Implementing innovations in
+                            technology. This strived me to be a part of MRITZ</h5>
+                        <h6 style="text-transform: uppercase;">Lubina Azeem</h6>
+                        <p>Head of Administration</p>
+                    </div>
+                </div>
+                <div class="team-container-small">
+                    <h6>Lubina Azeem</h6>
+                    <p>Head of Administration</p>
+                    <div>
+                        <img class="img-fluid" src="img/fawaz.png" alt="">
+                    </div>
+                    <img class="mt-1" src="img/right-arrow-team.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="content-full employee-hide-mob">
+            <div class="row">
+                <div>
+                    <div class="relative">
+                        <img class="team-img-container img-fluid" src="img/babida.png" alt="">
+                        <div class="small-employee-status">
+                            <h6>Lubina Azeem</h6>
                             <p>Head of Administration</p>
                         </div>
                     </div>
-                    <div class="team-container-small">
-                        <h6>Lubina Azeem</h6>
-                        <p>Head of Administration</p>
-                        <div>
-                            <img class="img-fluid" src="img/fawaz.png" alt="">
-                        </div>
-                        <img class="mt-1" src="img/right-arrow-team.svg" alt="">
-                    </div>
                 </div>
-            </div>
-            <div class="content-full employee-hide-mob">
-                <div class="row">
-                    <div>
-                        <div class="relative">
-                            <img class="team-img-container img-fluid" src="img/babida.png" alt="">
-                            <div class="small-employee-status">
-                                <h6>Lubina Azeem</h6>
-                                <p>Head of Administration</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/lubina.png" alt="">
-                    <img class="img-fluid" src="img/fawaz.png" alt="">
-                </div>
+                <img class="img-fluid" src="img/lubina.png" alt="">
+                <img class="img-fluid" src="img/fawaz.png" alt="">
             </div>
         </div>
     </div>
 
     <!-- footer -->
     <div>
-        <div class="container">
+        <div class="container about-mritz">
             <div class="content-full">
                 <div class="about-box-wrapper">
                     <div class="read-more">
@@ -242,7 +263,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="row subscribe-divs">
+                        <div class="row social-media">
                             <a href=""><img class="mx-1" src="img/insta.svg" alt=""></a>
                             <a href=""><img class="mx-1" src="img/twitter.svg" alt=""></a>
                             <a href=""><img class="mx-1" src="img/youtube.svg" alt=""></a>
