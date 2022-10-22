@@ -1,50 +1,3 @@
-
-// Select the HTML5 video
-const video = document.querySelector("#videow")
-// set the pause button to display:none by default
-document.querySelector(".fa-pause").style.display = "none"
-//  document.querySelector(".pause").style.display = "none"
-//  document.querySelector(".p-bytton-inner2").style.display = "none"
-// update the progress bar
-video.addEventListener("timeupdate", () => {
-    let curr = (video.currentTime / video.duration) * 100
-    if (video.ended) {
-        document.querySelector(".fa-play").style.display = "block"
-        document.querySelector(".fa-pause").style.display = "none"
-        document.querySelector(".play").src = "images/playWhite.svg"
-        document.querySelector(".play").style.display = "block"
-        document.querySelector(".p-button-inner").style.display = "block"
-
-    }
-    document.querySelector('.inner').style.width = `${curr}%`
-})
-// pause or play the video
-const play = (e) => {
-    // Condition when to play a video
-    if (video.paused) {
-        document.querySelector(".fa-play").style.display = "none"
-        document.querySelector(".fa-pause").style.display = "block"
-
-        document.querySelector(".play").src = "images/pause.svg"
-        document.querySelector(".p-button-inner").style.display = "none"
-        video.play()
-    }
-    else {
-        document.querySelector(".fa-play").style.display = "block"
-        document.querySelector(".fa-pause").style.display = "none"
-        document.querySelector(".play").style.display = "none"
-        document.querySelector(".p-button-inner").style.display = "none"
-        video.pause()
-    }
-
-}
-
-
-const fullScreen = (e) => {
-    e.preventDefault()
-    video.requestFullscreen()
-}
-
 //toggler
 
 const navLinks = document.getElementById("navbar-opened")
@@ -68,3 +21,60 @@ closeNav.addEventListener('click', () => {
     // closeNav.classList.add('display-off')
 })
 
+
+//Fixed Be-partof button
+$(window).scroll(function() {
+        
+    var windscroll = $(window).scrollTop();
+    /*
+    Since an average page height is not more than 720px so if windscroll >= 360 then let div appear.
+    */
+    if (windscroll >= 500) {
+    $(".fixedButton").css('display','block');
+    
+    } else {
+    
+    $(".fixedButton").css('display','none');
+    }
+});
+
+
+$('#read-more-1').click(()=> {
+    $('#news-modal-1').show();
+    $('#read-more-1').prop('disabled', true);
+});
+
+$('#news-modal-close-1').click(()=> {
+    $('#news-modal-1').hide();
+    $('#read-more-1').prop('disabled', false);
+});
+
+$('#read-more-2').click(()=> {
+    $('#news-modal-2').show();
+    $('#read-more-2').prop('disabled', true);
+});
+
+$('#news-modal-close-2').click(()=> {
+    $('#news-modal-2').hide();
+    $('#read-more-2').prop('disabled', false);
+});
+
+$('#read-more-3').click(()=> {
+    $('#news-modal-3').show();
+    $('#read-more-3').prop('disabled', true);
+});
+
+$('#news-modal-close-3').click(()=> {
+    $('#news-modal-3').hide();
+    $('#read-more-3').prop('disabled', false);
+});
+
+$('#read-more-4').click(()=> {
+    $('#news-modal-4').show();
+    $('#read-more-4').prop('disabled', true);
+});
+
+$('#news-modal-close-4').click(()=> {
+    $('#news-modal-4').hide();
+    $('#read-more-4').prop('disabled', false);
+});

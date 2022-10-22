@@ -37,6 +37,10 @@ body {
   width: max-content;
 }
 
+.join-main-btn{
+  margin-top: 40px;
+}
+
 .btn:hover {
   background-color: #00ffff;
 }
@@ -116,6 +120,16 @@ hr {
   padding: 2% 5%;
 }
 
+.about-content{
+  margin-top: 150px;
+  width: 46%;
+}
+
+.journey-content{
+  margin-top: 60px;
+  width: 42%;
+}
+
 .text-center {
   text-align: center;
 }
@@ -143,6 +157,7 @@ hr {
 
 .mx-1 {
   margin: 0 0.5rem;
+  height: 23px;
 }
 
 .mt-1 {
@@ -187,13 +202,41 @@ hr {
 
 /* home */
 
-.home-bg {
+#home-banner {
+  position: relative;
+  height: 100vh;
+  width:100%;
+  overflow: hidden;
+  background-color: rgba(24, 30, 64, 0.5);
+}
+
+ #home-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height:auto;
+  width:auto;
+  z-index: -100;
+ }
+
+ .home-top-content {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 2% 5%;
+  }
+  
+  .home-main-top-desc {
+    width: 48%;
+  }
+/* .home-bg {
   background-image: url(../img/home-bg-main.png);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100vw;
   height: 100vh;
-}
+} */
 
 .btn a {
   margin: auto;
@@ -230,9 +273,6 @@ hr {
   padding: 2% 5%;
 }
 
-.home-content .btn {
-  width: 20%;
-}
 
 .dot-work-right {
   position: absolute;
@@ -241,6 +281,47 @@ hr {
   z-index: 0;
 }
 
+/* fixed button */
+
+.fixedButton {
+  display: none;
+  position: fixed;
+  right: -65px;
+  top: 50vh;
+  z-index: 1000;
+}
+
+.fixedButton .fButton {
+  background: #181E40;
+  color: #ffffff;
+  width: 169px;
+  height: 51px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-size: 18px;
+  transform: rotate(270deg);
+  border: 3px solid aqua;
+  box-shadow: 0 0 26px 1px cyan, inset 0 0 1px 1px cyan;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.be-partof-content {
+  width: 70%;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 5% 3%;
+}
+
+.be-partof-content p {
+  width: 73%;
+}
+
+.be-partof{
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 500;
+}
 /* navbar */
 
 nav {
@@ -309,7 +390,7 @@ nav {
 .c-video video {
   margin-top: 0px;
   /* height: 281px; */
-  border-radius: 30px;
+  /* border-radius: 30px; */
 }
 
 .buttons .p-button {
@@ -322,7 +403,7 @@ nav {
 .timeline,
 .bar,
 .inner {
-  display: none;
+  /* display: none; */
   cursor: pointer;
 }
 
@@ -330,8 +411,8 @@ nav {
   margin-top: 0;
   margin-left: 0;
   position: absolute;
-  right: 7%;
-  bottom: 15px;
+  right: 4%;
+  bottom: 7px;
   cursor: pointer;
 }
 
@@ -363,7 +444,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .controls {
@@ -373,6 +454,7 @@ nav {
   width: 100%;
   flex-wrap: wrap;
   transform: translateY(140%);
+  margin-left: 30px;
 }
 
 .p-button-inner {
@@ -409,20 +491,21 @@ nav {
   cursor: pointer;
 }
 
-.containers .controls .timeline {
+.vdeoContainer .controls .timeline {
   flex: 1;
   display: flex;
   align-items: center;
   border: none;
 }
 
-.containers .controls .timeline .bar {
+.vdeoContainer .controls .timeline .bar {
   background: #ffffff;
   height: 4px;
   flex: 1;
+  max-width: 91%;
 }
 
-.containers .controls .timeline .bar .inner {
+.vdeoContainer .controls .timeline .bar .inner {
   background: aqua;
   width: 0%;
   height: 100%;
@@ -452,10 +535,12 @@ nav {
   padding-bottom: 90px;
 }
 
+
 /* why in emirates */
 
 .why-in-emirates {
   background-color: #161b3c;
+  background-image: linear-gradient(to bottom right, #161b3c, #181e40);
 }
 
 .waste-space {
@@ -470,8 +555,10 @@ nav {
 
 .image-fix {
   position: absolute;
-  bottom: -25px;
+  bottom: -32px;
   left: -62px;
+  width: 671px;
+  height: 680px;
 }
 
 .quote-style {
@@ -482,6 +569,19 @@ nav {
 .wie-mob {
   display: none;
 }
+
+
+/* circle of global */
+
+
+/* .coge-container{
+  background-image: url(../img/ellipse-1.png);
+} */
+
+/* .channer-partners{
+  background-image: linear-gradient(to bottom right,#192044, #1a2b51,#181d3f) ;
+} */
+
 
 /* text-part */
 
@@ -497,6 +597,18 @@ nav {
   position: absolute;
   left: -109px;
   top: 25px;
+}
+
+.emirates-dot{
+  position: absolute;
+  right: 0px;
+  margin-top: -90px;
+}
+
+.opportunity-dot{
+  position: absolute;
+  right: 0px;
+  margin-top: -90px;
 }
 
 .text-part-mob {
@@ -521,15 +633,17 @@ nav {
 }
 
 .opportunities-box-inner {
-  padding: 8%;
+  padding: 12%;
 }
 
 .opportunities-box-inner p {
-  margin-top: 8px;
+  margin-top: 12px;
+  font-weight: 400px;
 }
 
 .opportunities-box-inner h4 {
   margin-bottom: 0;
+  font-weight: 600px;
 }
 
 .arrows {
@@ -563,7 +677,9 @@ nav {
 }
 
 .upcoming-projects {
-  background-image: url(../img/upcoming-projects-bg.png);
+  background-image: linear-gradient(180deg, transparent, rgb(17, 22, 51)),url(../img/upcoming-projects-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
 }
 
@@ -617,6 +733,7 @@ nav {
   display: flex;
   justify-content: center;
   background-color: #22294d;
+  border: 3px solid transparent;
 }
 
 .partners-box:hover {
@@ -675,6 +792,9 @@ nav {
 #subBg {
   background-color: #111633;
   border-bottom: 2px solid #10e9d8;
+}
+.social-media{
+  margin-top: 10px;
 }
 
 /* .subscribe-divs {
@@ -739,13 +859,31 @@ nav {
 
 /* about-page-customizations */
 
+.home-bg-main{
+  background-image: linear-gradient(135deg, rgba(24, 30, 64, 0.5), rgba(24, 30, 64, 0.5)),
+      url(../img/home-bg-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: rgba(24, 30, 64, 0.5);
+
+}
+
 .employee-hide-mob {
   display: none;
 }
 
 #visionary-dots {
+  /* background-image: linear-gradient(180deg, #0f152d, #162d4d) ; */
   position: relative;
-  margin-top: 4rem;
+}
+
+#founding-team{
+  background-image: linear-gradient(180deg, #162c4b, #11162f) ;
+}
+
+.about-mritz{
+  background-image: linear-gradient(180deg, #11162f, #0d1022) ;
 }
 
 .img-container-wrapper {
@@ -764,15 +902,17 @@ nav {
 
 #img-wrap-side {
   position: relative;
+  top: 50px;
 }
 
 .visionary-side {
   max-height: 100%;
   position: absolute;
-  left: -63px;
-  top: -25px;
+  left: -80px;
+  top: -46px;
   z-index: -1;
 }
+
 
 .chairman-text h4 {
   margin-bottom: 0;
@@ -780,6 +920,16 @@ nav {
 
 .chairman-text {
   float: right;
+}
+
+#chairman-container{
+  height: 509px;
+  width: 509px;
+  margin-left: -96px;
+}
+
+#chairman-img{
+  margin: 10px 30px;
 }
 
 .dot-work-visionary {
@@ -848,6 +998,7 @@ nav {
 .read-more-class {
   justify-content: space-between;
   display: flex;
+  cursor: pointer;
 }
 
 .action-buttons {
@@ -886,6 +1037,97 @@ nav {
 
 .read-more-btn:hover {
   color: #111633;
+}
+
+/* News Modal */
+
+.modal-container{
+  position: absolute;
+  background: #22294D;
+  margin: 900px 80px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.13);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.modal-wrapper{
+  padding: 0px 118px 55px 87px;
+}
+.modal-img{
+  min-width: 100%;
+  max-height: 100vh;
+}
+.moda-inner-div{
+  margin: 40px 0px;
+  padding: 30px;
+  background-color: #181e40;
+}
+.modal-container p{
+  line-height: 24px;
+}
+
+.modal-container .moda-inner-div p{
+  font-size: 18px;
+  color: #00ffff;
+}
+.modal-container h6 span {
+  font-weight: 500;
+  text-align: left;
+  color: #cfc0c0;
+  padding: 0px 40px;
+}
+.modal-date-buttons{
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.modal-action-buttons {
+  width: 20%;
+  display: flex;
+  margin-left: 50px;
+}
+
+.modal-action-buttons img{
+  padding: 0px 10px;
+}
+
+#news-modal-1 {
+  top: 33%;
+  display: none;
+}
+
+#news-modal-2 {
+  top: 760px;
+  display: none;
+}
+
+#news-modal-3 {
+  top: 760px;
+  display: none;
+}
+
+#news-modal-4 {
+  top: 760px;
+  display: none;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: end;
+  margin: 25px;
+  cursor: pointer;
+}
+.modal-close-circle {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+}
+.modal-close-icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }
 
 /* advisor-page */
@@ -1151,7 +1393,7 @@ h6 {
   }
 
   .home-content .btn {
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 1rem 2rem;
     width: 30%;
   }

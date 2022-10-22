@@ -30,8 +30,11 @@
 </head>
 
 <body>
-    <div class="home-wrapper">
+    <div class="home-wrapper" id="home-banner">
         <div class="home-bg relative">
+            <video autoplay muted loop id="home-video">
+                <source src="./videos/MAIN_RENDER.mp4" type="video/mp4">
+            </video>
             <nav class="navbar-pc">
                 <div class="row justify-space-between">
                     <div class="home-logo">
@@ -74,12 +77,12 @@
             </nav>
 
             <div class="container home-container">
-                <div class="content">
+                <div class="home-top-content">
                     <div class="home-content">
                         <h1>Inspiring <br> Powerful Minds, <br> <span>Creating Bold <br> Solutions.</span></h1>
-                        <p>Join our early access list now and you’ll find out first when open up our first places inside
+                        <p class="home-main-top-desc">Join our early access list now and you’ll find out first when open up our first places inside
                             the platform. Estimated early date january 2021</p>
-                        <div class="btn">
+                        <div class="btn join-main-btn">
                             <a href="">Join <strong>MRITZ</strong></a>
                         </div>
                     </div>
@@ -90,6 +93,14 @@
                 <img class="img-fluid dot-work-right" src="img/dot-work-fat.png" alt="">
             </div>
         </div>
+    </div>
+
+    <!-- Be part of fixed button -->
+    <div class="fixedButton">
+        <a href="be-part-of.html"><button class="fButton">
+                <div class="be-partof">Be<span style="margin-left:5px;" class="font-aqua">PARTOF</span>
+                </div>
+            </button></a>
     </div>
 
     <!-- explore mritz -->
@@ -111,29 +122,27 @@
 
     <!--Video Presentation-->
     <div class="vdeoContainer">
-        <div class="containers">
-            <div class="c-video">
-                <video class="video" onclick="this.paused?this.play():this.pause();" id="videow">
-                    <source src="/videos/mritz_cover_blue.mp4" type="video/mp4">
-                </video>
-                <div>
-                    <button class="p-button-inner" id="playPauseBtn" onclick="play(event)">
-                        <img src="img/playWhite.svg" width="61px" height="73px" class="play" />
-                    </button>
+        <div class="c-video">
+            <video class="video" onclick="this.paused?this.play():this.pause();" id="videow">
+                <source src="./videos/MRITZ_Products.mp4" type="video/mp4">
+            </video>
+            <div>
+                <button class="p-button-inner" id="playPauseBtn" onclick="play(event)">
+                    <img src="img/playWhite.svg" width="61px" height="73px" class="play" />
+                </button>
+            </div>
+            <div class="controls">
+                <div class="buttons">
+                    <button class="p-button" onclick="play(event)"><i class="fa fa-play"></i><i
+                            class="fa fa-pause"></i></button>
                 </div>
-                <div class="controls">
-                    <div class="buttons">
-                        <button class="p-button" onclick="play(event)"><i class="fa fa-play"></i><i
-                                class="fa fa-pause"></i></button>
+                <div class="timeline">
+                    <div class="bar">
+                        <div class="inner"></div>
                     </div>
-                    <div class="timeline">
-                        <div class="bar">
-                            <div class="inner"></div>
-                        </div>
-                    </div>
-                    <div class="fullScButton" onclick="fullScreen(event)">
-                        <img src="img/fullSc.svg" alt="fullscreen" />
-                    </div>
+                </div>
+                <div class="fullScButton" onclick="fullScreen(event)">
+                    <img src="img/fullSc.svg" alt="fullscreen" />
                 </div>
             </div>
         </div>
@@ -152,20 +161,21 @@
                 </div>
                 <div class="wie-text">
                     <h2>Why <span>MRITZ</span> in Emirates ?</h2>
-                    <p>Emirates is a hotbed for entrepreneurs not just to prosper but thrive. The entrepreneurial
+                    <p>Emirates is a hotbed for entrepreneurs not just to prosper but thrive. The </br>entrepreneurial
                         eco-system here favours those with innovative ideas or projects. The nitty-gritty for
                         starting a
                         business in the Emirates is simple and offers state-of-the-art infrastructure. In short,
                         Emirates is the first choice for every entrepreneur. </p>
                 </div>
             </div>
+            <img class="emirates-dot" src="img/dot-emirates.png" alt="">
             <div class="row wie-pc">
                 <div class="content relative">
                     <img class="img-fluid image-fix" src="img/highness.png" alt="">
                 </div>
                 <div class="content">
                     <div>
-                        <h4>Inspired from His Highness' <span>‘Question‘</span></h4>
+                        <h4>Inspired from </br> His Highness' <span>‘Question‘</span></h4>
                         <div style="display: flex;">
                             <img class="quote-style" src="img/quote-open.png" alt="">
                             <h3>&nbsp; Why not? &nbsp;</h3>
@@ -178,7 +188,7 @@
                     </div>
                     <hr>
                     <div>
-                        <p>H.H. Sheikh Mohammed Bin Rashid Al Makhtoum</p>
+                        <p>H.H. Sheikh Mohammed Bin </br> Rashid Al Makhtoum</p>
                         <h6>Vice President & Prime Minister of UAE, <br>
                             Ruler of Emirate of Dubai</h6>
                     </div>
@@ -255,6 +265,7 @@
     <!-- unlimited opportunities -->
     <div>
         <div class="container">
+            <img class="opportunity-dot" src="img/dot-emirates.png" alt="">
             <div class="content-full">
                 <h4>Together we go beyond <span>'Unlimited Opportunities'</span></h4>
                 <p>Every organization and professional is confronted with the challenge of rapid change.
@@ -407,9 +418,9 @@
     <!-- projects-details -->
     <div class="projects-details-large">
         <div class="container px-0">
-            <div class="row">
+            <div class="row coge-container">
                 <div class="content m-auto">
-                    <img class="img-fluid" src="img/coe.png" alt="">
+                    <img class="img-fluid" src="img/coe1.png" alt="">
                 </div>
                 <div class="content m-auto">
                     <h2><span>Circle of Global</span> Entrepreneurs</h2>
@@ -684,7 +695,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="row subscribe-divs">
+                        <div class="row social-media">
                             <a href=""><img class="mx-1" src="img/insta.svg" alt=""></a>
                             <a href=""><img class="mx-1" src="img/twitter.svg" alt=""></a>
                             <a href=""><img class="mx-1" src="img/youtube.svg" alt=""></a>
@@ -732,5 +743,7 @@
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script src="js/index.js"></script>
+
+<script src="js/video.js"></script>
 
 </html>
