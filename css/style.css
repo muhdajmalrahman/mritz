@@ -8,7 +8,7 @@ body {
   margin: 0px;
   padding: 0px;
   max-width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .container {
@@ -205,7 +205,7 @@ hr {
 #home-banner {
   position: relative;
   height: 100vh;
-  width:100%;
+  width: 100vw;
   overflow: hidden;
   background-color: rgba(24, 30, 64, 0.5);
 }
@@ -214,10 +214,9 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  height:auto;
-  width:auto;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -100;
  }
 
@@ -361,7 +360,7 @@ nav {
 /* explore mritz */
 
 .explore {
-  background-image: url(../img/network.png);
+  background-image: linear-gradient(180deg, #0f152d, transparent),url(../img/network.png);
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -427,8 +426,8 @@ nav {
 
 .play,
 .pause {
-  width: 33px;
-  height: 40px;
+  width: 65px;
+  height: 70px;
   cursor: pointer;
 }
 
@@ -450,7 +449,7 @@ nav {
 .controls {
   display: flex;
   position: absolute;
-  bottom: 0%;
+  bottom: 15%;
   width: 100%;
   flex-wrap: wrap;
   transform: translateY(140%);
@@ -466,7 +465,7 @@ nav {
   width: 196px;
   height: 196px;
   background-color: rgba(0, 0, 0, 0.1);
-  border: 4px solid aqua;
+  border: 7px solid aqua;
 }
 
 .p-button-inner2 {
@@ -532,7 +531,6 @@ nav {
 
 .vdeoContainer {
   background-color: #181e40;
-  padding-bottom: 90px;
 }
 
 
@@ -578,9 +576,6 @@ nav {
   background-image: url(../img/ellipse-1.png);
 } */
 
-/* .channer-partners{
-  background-image: linear-gradient(to bottom right,#192044, #1a2b51,#181d3f) ;
-} */
 
 
 /* text-part */
@@ -595,7 +590,7 @@ nav {
 
 .fat-dots {
   position: absolute;
-  left: -109px;
+  left: -118px;
   top: 25px;
 }
 
@@ -716,6 +711,10 @@ nav {
 }
 
 /* channel-partners */
+
+.channel-partners {
+  padding: 0;
+}
 .partners-box-wrapper {
   justify-content: space-between;
   display: flex;
@@ -773,6 +772,9 @@ nav {
   display: flex;
   flex-direction: row;
 }
+.padding-fix {
+  padding: 2% 0;
+}
 
 .read-more {
   width: 30%;
@@ -803,10 +805,11 @@ nav {
 
 .email-type {
   padding: 2.5% 5%;
-  background: #232d5c;
+  background: #0C1129;
   border-radius: 168.607px;
   border: 0px;
   width: 100%;
+  height: 25px;
 }
 
 .email-type::placeholder {
@@ -822,7 +825,7 @@ nav {
 .email-signup {
   position: absolute;
   right: 0;
-  padding: 2.3% 3%;
+  padding: 3.3% 3%;
   background: #00ffff;
   border-radius: 168.607px;
   border: 0px;
@@ -1297,6 +1300,7 @@ h6 {
   .content {
     width: 90%;
     margin: auto;
+    text-align: center;
   }
 
   .floatClass {
@@ -1392,10 +1396,78 @@ h6 {
     top: 10%; */
   }
 
+  .home-top-content {
+    margin-top: 580px;
+    padding: 1% 4%;
+  }
+
+  .explore .container .content {
+    text-align: center;
+  }
+
+  .home-main-top-desc {
+    width: 100%;
+  }
+
+  .c-video {
+    height: 50vh;
+  }
+  .vdeoContainer .controls {
+    bottom: 20%;
+    margin-left: 14px;
+  }
+  .fullScButton {
+    right: 6%;
+    bottom: 5px;
+  }
+  .vdeoContainer .controls .timeline .bar {
+    max-width: 86%;
+  }
+
+  .fullScButton img {
+    width: 15px;
+  }
+
+  #playPauseBtn {
+    width: 70px;
+    height: 70px;
+    border: 6px solid aqua;
+  }
+
+  #playPauseBtn img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .buttons .p-button {
+    padding: 10px;
+  }
+
   .home-content .btn {
     margin: 3rem auto;
     padding: 1rem 2rem;
     width: 30%;
+  }
+
+  .email-signup {
+    padding: 3.8% 3%;
+  }
+
+  .opportunity-desc {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  #subBg {
+    background-image: linear-gradient(180deg, #181e40, #111633) ;
+  }
+
+  .social-media{
+    margin-top: 40px !important;
+  }
+
+  .channel-partners {
+    text-align: center;
   }
 
   .scroll-more-arrow {
@@ -1461,6 +1533,7 @@ h6 {
 
   .foot-mob {
     display: block;
+    padding-bottom: 90px;
   }
 
   .foot-mob a {
@@ -1539,6 +1612,10 @@ h6 {
     display: none;
   }
 
+  .wie-mob {
+    display: block;
+  }
+
   .wie-mob h4 {
     text-align: center;
   }
@@ -1551,15 +1628,28 @@ h6 {
     display: none;
   }
 
+  .upcoming-projects-mob{
+    display: block;
+  }
+
   .upcoming-projects-mob .content {
     padding: 5%;
   }
 
   .upcoming-projects-mob-inner {
-    background-image: url(../img/upcoming-projects-bg.png);
+    background-image: linear-gradient(180deg, transparent, rgb(17, 22, 51)),url(../img/upcoming-projects-bg-1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    height: 445px;
+  }
+
+  .upcoming-projects-mob .content {
+    padding: 30% 0%;
+    text-align: center;
+  }
+  .upcoming-projects-mob .content p {
+    padding: 0px 20px;
   }
 
   /* visionary-page */
